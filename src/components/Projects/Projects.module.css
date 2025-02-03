@@ -1,0 +1,105 @@
+.container {
+  padding: 2rem;
+  background-color: rgba(12, 12, 12, 0.6); /* Dark background with transparency */
+  color: var(--color-text); /* Use the text color from your vars */
+  border-radius: 15px; /* Rounded corners */
+  margin-top: 79px; /* Consistent spacing */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  color: var(--color-text); /* Use the text color from your vars */
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project {
+  background: rgba(165, 215, 232, 0.1); /* Light background with transparency */
+  padding: 1.5rem;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--color-text); /* Use the text color from your vars */
+}
+
+.project p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text); /* Use the text color from your vars */
+}
+
+.project ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  color: var(--color-text); /* Use the text color from your vars */
+}
+
+.project ul li {
+  margin-bottom: 0.5rem;
+}
+
+.achievements {
+  margin-top: 3rem;
+  background: rgba(165, 215, 232, 0.1); /* Light background with transparency */
+  padding: 1.5rem;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.achievements h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-text); /* Use the text color from your vars */
+}
+
+.achievements ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  color: var(--color-text); /* Use the text color from your vars */
+}
+
+.achievements ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 830px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .project {
+    padding: 1rem;
+  }
+
+  .achievements {
+    padding: 1rem;
+  }
+}

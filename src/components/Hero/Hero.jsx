@@ -12,7 +12,7 @@ export const Hero = () => {
         "Aspiring developer with hands-on experience in React and Spring Boot. <br></br>
         Open to new opportunities and challenges!"
         </p>
-        <a href="kishordarkunde4@gmail.com" className={styles.contactBtn}>
+        <a href="mailto:kishordarkunde4@gmail.com" className={styles.contactBtn}>
           Contact Me
         </a>
       </div>
